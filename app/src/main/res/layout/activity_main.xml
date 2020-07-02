@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fond"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/route_menu" />
+
+    <TextView
+        android:id="@+id/textRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Route"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="70sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/fond"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fond"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textRoute"
+        app:layout_constraintStart_toEndOf="@+id/textRoute"
+        app:layout_constraintTop_toTopOf="@+id/textRoute"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textRoute"
+        app:layout_constraintEnd_toStartOf="@+id/textRoute"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/textRoute"
+        app:layout_constraintTop_toBottomOf="@+id/textRoute"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/textRoute"
+        app:layout_constraintTop_toBottomOf="@+id/textRoute"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textRoute"
+        app:layout_constraintEnd_toStartOf="@+id/textRoute"
+        app:layout_constraintTop_toTopOf="@+id/textRoute"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textRoute"
+        app:layout_constraintStart_toEndOf="@+id/textRoute"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+    <ImageView
+        android:id="@+id/imageVoiture"
+        android:layout_width="240dp"
+        android:layout_height="201dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fond"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/fond"
+        app:layout_constraintTop_toTopOf="@+id/textRoute"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@drawable/voiture" />
+
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/carter_one"
+        android:text="GO"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="70sp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fond"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageVoiture" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact gmail : onur6se8@gmail.com"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonOK"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOK" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

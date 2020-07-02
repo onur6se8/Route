@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/laRoute"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/route_normal"
+        tools:layout_editor_absoluteX="-40dp"
+        tools:layout_editor_absoluteY="-20dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/ligne1"
+            android:layout_width="20dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/background_light" />
+
+        <View
+            android:id="@+id/ligne2"
+            android:layout_width="20dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/background_light" />
+
+        <View
+            android:id="@+id/ligne3"
+            android:layout_width="20dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/background_light" />
+
+        <View
+            android:id="@+id/ligne4"
+            android:layout_width="20dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/background_light" />
+
+        <View
+            android:id="@+id/ligne5"
+            android:layout_width="20dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/background_light" />
+
+        <View
+            android:id="@+id/ligne6"
+            android:layout_width="20dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/background_light" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/voiture"
+        android:layout_width="160dp"
+        android:layout_height="320dp"
+        android:scaleType="fitXY"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/feu_turbo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/voiture_du_dessus" />
+
+    <ImageView
+        android:id="@+id/feu_turbo"
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/vitesse_sup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/laRoute" />
+
+    <ImageButton
+        android:id="@+id/vitesse_sup"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:scaleType="fitXY"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/boite_de_vitesse"
+        app:layout_constraintTop_toBottomOf="@+id/turbo"
+        app:srcCompat="@drawable/vitesse_sup" />
+
+    <ImageButton
+        android:id="@+id/vitesse_inf"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/boite_de_vitesse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turbo"
+        app:srcCompat="@drawable/vitesse_inf" />
+
+    <ImageView
+        android:id="@+id/boite_de_vitesse"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/laRoute"
+        app:srcCompat="@drawable/vitesse_nul" />
+
+    <Button
+        android:id="@+id/turbo"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/boite_de_vitesse"
+        app:layout_constraintTop_toTopOf="@+id/boite_de_vitesse" />
+
+    <Button
+        android:id="@+id/superTurbo"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/boite_de_vitesse"
+        app:layout_constraintEnd_toEndOf="@+id/boite_de_vitesse" />
+
+    <ImageButton
+        android:id="@+id/retour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/laRoute"
+        app:layout_constraintTop_toTopOf="@+id/laRoute"
+        app:srcCompat="@android:color/transparent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
